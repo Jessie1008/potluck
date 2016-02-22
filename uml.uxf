@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>24</y>
+      <w>192</w>
+      <h>328</h>
+    </coordinates>
+    <panel_attributes>Package::Member
+--
+-memberId: int
+-isAdmin: Boolean
+-alias: String
+-firstName: String
+-lastName: String
+-email: String
+-userName: String
+-password: String
+--
++Member ()
++Member (mb:MemberBuilder)
++getMemberId(): int
++isAdmin(): boolean
++getAlias(): String
++getFirstName(): String
++getLastName(): String
++getEmail(): String
++getUserName(): String
++getPassword():String
++setMemberId(memberID: int)
++setAlias(alias: String)
++setFirstName (firstName:String)
++setLastName (lastName: String)
++setEmail(email: String)
+
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>8</y>
+      <w>168</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>
+Package::MemberBuilder
+--
+-MemeberId: int 
+-isAdmin: Boolean
+-alias: String
+-firstName: String
+-lastName: String
+-email: String
+-userName: String
+-password: String
+
+--
++MemberBuilder()
++getMemberId(): int
++isAdmin(): boolean
++getAlias(): String
++getFirstName(): String
++getLastName(): String
++getEmail(): String
++getUserName(): String
++getPassword():String
++create(): MemberBuilder
++memberID():MemberBuilder
++isAdmin():MemberBuilder
++alias():
++firstName():MemberBuilder
++lastName():MemberBuilder
++email():
++username():MemberBuilder
++password():MemberBuilder
++build(): Member
+
+*-- Resp2*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>424</x>
+      <y>376</y>
+      <w>168</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Package::Category
+--
+-categoryId: int
+-categoryName: String
+--
++Category()
++getCategoryId(): int
++getCategoryName(): String
++setCategoryID(categoryId : int)
++setCategoryName(categroeyName : String)
+
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>176</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Package::Ingredient
+--
+-ingredientId:int
+-name:String
+-measurement:String
+--
++setIngredientId(int)
++setName(String)
++setMeasurement(String)
++getIngredientId():int
++getName():String
++getMeasurement():String
++addIngredient()
++editIngredient(int)
++deleteIngredient(int)
+
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>656</x>
+      <y>376</y>
+      <w>168</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Package::Tag
+--
+-tagId: int
+-tagText: String
+--
++Tag()
++getTagId(): int
++getTagText():String
++setTagId(tagId:int)
++setTagText(tagText: String)
+
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>496</x>
+      <y>16</y>
+      <w>168</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>Package::Recipe
+--
+-recipeId : int
+-directions:String
+-dateAdded : Date
+-attribute:String
+
+--
++setrecipeId(recipeId: int)
++setAttribution(attribution: String)
++setDirection(direction: String)
++getRecipeId():int
++getAttribution():String
++getDirections():String
+
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>112</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>424</x>
+      <y>96</y>
+      <w>88</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>656</x>
+      <y>96</y>
+      <w>144</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0;160.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>512</x>
+      <y>184</y>
+      <w>40</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;240.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>184</y>
+      <w>72</w>
+      <h>248</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>70.0;280.0;10.0;280.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>864</x>
+      <y>0</y>
+      <w>168</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>Package::Comment
+--
+-commentId : int
+-memberId: int
+-recipeId: int
+-dateAdded : Date
+-rank:int
+commentText:String
+
+--
++setCommentId(commentId: int)
++setMemberId(memberId: int)
++setRecipeId(recipeId: int)
++setCommenttext(text: String)
++setRank(rank: int)
++getCommentId():int
++setDateAdded(Date)
++getRecipeId():int
++getRand():int
++getCommentText():String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>656</x>
+      <y>32</y>
+      <w>224</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;260.0;10.0</additional_attributes>
+  </element>
+</diagram>
