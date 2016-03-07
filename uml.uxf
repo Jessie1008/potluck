@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.1.1">
-  <zoom_level>8</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>240</x>
-      <y>24</y>
-      <w>192</w>
-      <h>328</h>
+      <x>270</x>
+      <y>279</y>
+      <w>216</w>
+      <h>396</h>
     </coordinates>
-    <panel_attributes>Package::Member
+    <panel_attributes>domain::Member
 --
 -memberId: int
 -isAdmin: Boolean
@@ -19,6 +19,7 @@
 -email: String
 -userName: String
 -password: String
+-recipes: ArrayList&lt;Recipe&gt;
 --
 +Member ()
 +Member (mb:MemberBuilder)
@@ -35,6 +36,7 @@
 +setFirstName (firstName:String)
 +setLastName (lastName: String)
 +setEmail(email: String)
++getRecipes(): ArrayList &lt;Recipe&gt; 
 
 --
 Responsibilities
@@ -46,12 +48,11 @@ Responsibilities
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>8</y>
-      <w>168</w>
-      <h>400</h>
+      <y>261</y>
+      <w>189</w>
+      <h>450</h>
     </coordinates>
-    <panel_attributes>
-Package::MemberBuilder
+    <panel_attributes>domain::MemberBuilder
 --
 -MemeberId: int 
 -isAdmin: Boolean
@@ -89,12 +90,12 @@ Package::MemberBuilder
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>424</x>
-      <y>376</y>
-      <w>168</w>
-      <h>120</h>
+      <x>477</x>
+      <y>756</y>
+      <w>261</w>
+      <h>135</h>
     </coordinates>
-    <panel_attributes>Package::Category
+    <panel_attributes>domain::Category
 --
 -categoryId: int
 -categoryName: String
@@ -114,12 +115,12 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>680</x>
-      <y>176</y>
-      <w>168</w>
-      <h>152</h>
+      <x>765</x>
+      <y>450</y>
+      <w>189</w>
+      <h>171</h>
     </coordinates>
-    <panel_attributes>Package::Ingredient
+    <panel_attributes>domain::Ingredient
 --
 -ingredientId:int
 -name:String
@@ -144,12 +145,12 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>656</x>
-      <y>376</y>
-      <w>168</w>
-      <h>120</h>
+      <x>792</x>
+      <y>684</y>
+      <w>189</w>
+      <h>135</h>
     </coordinates>
-    <panel_attributes>Package::Tag
+    <panel_attributes>domain::Tag
 --
 -tagId: int
 -tagText: String
@@ -169,17 +170,21 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>496</x>
-      <y>16</y>
-      <w>168</w>
-      <h>176</h>
+      <x>558</x>
+      <y>270</y>
+      <w>189</w>
+      <h>315</h>
     </coordinates>
-    <panel_attributes>Package::Recipe
+    <panel_attributes>domain::Recipe
 --
 -recipeId : int
 -directions:String
 -dateAdded : Date
 -attribute:String
+-ingredientList: ArrayList&lt;Ingredient&gt;
+-commentList: ArrayList&lt;Comment&gt;
+-categoryList: ArrayList&lt;Category&gt;
+-tagList: ArrayList&lt;Tag&gt;
 
 --
 +setrecipeId(recipeId: int)
@@ -188,20 +193,21 @@ Responsibilities
 +getRecipeId():int
 +getAttribution():String
 +getDirections():String
++getIngredientList(): ArrayList&lt;Ingredient&gt;
++getCommentList(): ArrayList&lt;Comment&gt;
++getCategoryList(): ArrayList&lt;Category&gt;
++getTagList(): ArrayList&lt;TagList&gt;
 
---
-Responsibilities
--- Resp1
-*-- Resp2*</panel_attributes>
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>112</y>
-      <w>96</w>
-      <h>24</h>
+      <x>180</x>
+      <y>378</y>
+      <w>108</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
@@ -209,10 +215,10 @@ Responsibilities
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>424</x>
-      <y>96</y>
-      <w>88</w>
-      <h>24</h>
+      <x>477</x>
+      <y>360</y>
+      <w>99</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
@@ -220,10 +226,10 @@ Responsibilities
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>656</x>
-      <y>96</y>
-      <w>144</w>
-      <h>96</h>
+      <x>738</x>
+      <y>360</y>
+      <w>162</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;160.0;10.0;160.0;100.0</additional_attributes>
@@ -231,36 +237,36 @@ Responsibilities
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>512</x>
-      <y>184</y>
-      <w>40</w>
-      <h>208</h>
+      <x>576</x>
+      <y>576</y>
+      <w>45</w>
+      <h>198</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=0..n</panel_attributes>
-    <additional_attributes>10.0;240.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;200.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>600</x>
-      <y>184</y>
-      <w>72</w>
-      <h>248</h>
+      <x>675</x>
+      <y>576</y>
+      <w>135</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=0..n</panel_attributes>
-    <additional_attributes>70.0;280.0;10.0;280.0;10.0;10.0</additional_attributes>
+    <additional_attributes>130.0;150.0;10.0;150.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>864</x>
-      <y>0</y>
-      <w>168</w>
-      <h>256</h>
+      <x>972</x>
+      <y>252</y>
+      <w>189</w>
+      <h>288</h>
     </coordinates>
-    <panel_attributes>Package::Comment
+    <panel_attributes>domain::Comment
 --
 -commentId : int
 -memberId: int
@@ -286,12 +292,101 @@ commentText:String
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>656</x>
-      <y>32</y>
-      <w>224</w>
-      <h>24</h>
+      <x>738</x>
+      <y>288</y>
+      <w>252</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>225</x>
+      <y>801</y>
+      <w>216</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>PotluckDatabase
+--
+_- potluckDatabase: PotluckDatbase_
+_-members: Vector&lt;Member&gt;_
+_-tags: Vector&lt;Tag&gt;_
+_-categorys:Vector&lt;Category&gt;_
+
+--
+- PotluckDatabase()
+_+ getInstance(): PotluckDatabase_
+_+getMembers(): Vector&lt;Member&gt;_
+_+getRecipes(): Vector&lt;Recipe&gt;_
+_+getTags(): Vector&lt;Tag&gt;_
+_+getCategorys(): Vector&lt;Category&gt;_
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>333</x>
+      <y>0</y>
+      <w>189</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>RecipeView
+--
+-controller: RecipeController
+--
++ RecipeView(controller: RecipeController)
+--
+Responsibilities
+-- Resp1
+-- Resp2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>513</x>
+      <y>81</y>
+      <w>126</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>120.0;210.0;120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>342</x>
+      <y>666</y>
+      <w>27</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>810</y>
+      <w>423</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;180.0;450.0;180.0;450.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>819</y>
+      <w>63</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
   </element>
 </diagram>
