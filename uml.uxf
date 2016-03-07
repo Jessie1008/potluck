@@ -329,32 +329,34 @@ _+getCategorys(): Vector&lt;Category&gt;_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>333</x>
-      <y>0</y>
-      <w>189</w>
-      <h>171</h>
+      <x>270</x>
+      <y>45</y>
+      <w>261</w>
+      <h>135</h>
     </coordinates>
     <panel_attributes>RecipeView
 --
 -controller: RecipeController
 --
 + RecipeView(controller: RecipeController)
---
-Responsibilities
--- Resp1
--- Resp2</panel_attributes>
++ showRecipeMenu(): void
++ addRecipe(): void
++ deleteRecipe(): void
++ displayRecipe(): void
+
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>513</x>
-      <y>81</y>
+      <x>522</x>
+      <y>126</y>
       <w>126</w>
-      <h>207</h>
+      <h>27</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>120.0;210.0;120.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -388,5 +390,41 @@ Responsibilities
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>54</y>
+      <w>189</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>RecipeController
+--
+-model: Recipe
+--
++setRecipeId(recipeId: int)
++setAttribution(attribution: String)
++setDirection(direction: String)
++getRecipeId():int
++getAttribution():String
++getDirections():String
++getIngredientList(): ArrayList&lt;Ingredient&gt;
++getCommentList(): ArrayList&lt;Comment&gt;
++getCategoryList(): ArrayList&lt;Category&gt;
++getTagList(): ArrayList&lt;TagList&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>675</x>
+      <y>216</y>
+      <w>27</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
