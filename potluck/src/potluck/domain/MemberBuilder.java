@@ -19,39 +19,9 @@ public class MemberBuilder {
 		MemberBuilder mb = new MemberBuilder();
 		return mb;
 	}
-
-	public String getPassword() {
-		return password;
+	public Member build() {
+		return new Member(this);
 	}
-
-	public String getUserName() {
-		return userName;
-	}
-
-	public int getMemberID() {
-		return memberID;
-	}
-
-	public boolean isAdmin() {
-		return isAdmin;
-	}
-
-	public String getAlias() {
-		return alias;
-	}
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
 	public MemberBuilder password(String password) {
 		this.password = password;
 		return this;
@@ -90,10 +60,39 @@ public class MemberBuilder {
 		this.isAdmin=admin;
 		return this;
 	}
-	
 
-	public Member build() {
-		return new Member(this);
+	public String getPassword() {
+		return password;
 	}
 
+	public String getUserName() {
+		return userName;
+	}
+
+	public int getMemberID() {
+		return memberID;
+	}
+
+	public boolean isAdmin() {
+		return isAdmin;
+	}
+
+	public String getAlias() {
+		return alias;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	
+	
 }

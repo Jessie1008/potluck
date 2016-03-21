@@ -8,7 +8,7 @@ public class RecipeView {
 	}
 
 	private void showRecipeMenu() {
-		RecipeView recipeView = new RecipeView();
+		
 		System.out.println(
 				"Please choose an option:\n 1. add a recipe; 2. edit a recipe; 3 delete a recipe; 4 diplay recipes; 0 quit\n");
 		Scanner input = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class RecipeView {
 			addRecipe();
 			break;
 		case 2:
-			addRecipe();
+			updateRecipe();
 			break;
 		case 3:
 			deleteRecipe();
@@ -33,6 +33,11 @@ public class RecipeView {
 
 			break;
 		}
+	}
+
+	private void updateRecipe() {
+		// TODO Auto-generated method stub
+		
 	}
 
 	public void addRecipe() {
