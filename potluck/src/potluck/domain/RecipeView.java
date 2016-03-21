@@ -36,7 +36,32 @@ public class RecipeView {
 	}
 
 	public void addRecipe() {
-		// TODO Auto-generated method stub
+		Recipe recipe = new Recipe();
+		System.out.println("Please enter your recipe name: ");
+		Scanner input = new Scanner(System.in);
+		String recipeName = input.nextLine();
+		System.out.println("Please enter your recipe direction: ");
+		String recipeDirection = input.nextLine();
+		System.out.println("Please select your recipe tag: ");
+		for(int i = 1; i <= potLuckDatabase.getInstance().getTagList().size(); i++){
+			System.out.println(i+" "+potLuckDatabase.getInstance().getTagList().get(i));
+		}
+		int tagIndex = input.nextInt();
+		System.out.println("Please select your recipe Catagory: ");
+		for(int i = 1; i <= potLuckDatabase.getInstance().getTagList().size(); i++){
+			System.out.println(i+" "+potLuckDatabase.getInstance().getCategoryList().get(i));
+		}
+		int catagoryIndex = input.nextInt();
+		System.out.println("Please enter your ingredient name: ");
+		String ingredientName = input.nextLine();
+		System.out.println("Please enter your ingredient measurement: ");
+		String ingredientMeasurement = input.nextLine();
+		Ingredient ingredient = new Ingredient(ingredientName, ingredientMeasurement);
+		recipe.setRecipeName(recipeName);
+		recipe.setDirection(recipeDirection);
+		recipe.addTag(potLuckDatabase.getInstance().getTagList().get(tagIndex));
+		recipe.addCategory(potLuckDatabase.getInstance().getCategoryList().get(catagoryIndex));
+		recipe.addIngredient(ingredient);
 
 	}
 
