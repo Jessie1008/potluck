@@ -6,12 +6,12 @@ import java.util.Date;
 public interface RecipeControllerInterface {
 	public void setRecipeId(int recipeId);
 	public void setDirection(String direction);
-	public void setDataAdded(Date dateAddded);
 	public void addTag(Tag tag);
 	public void addCategory(Category category);
 	public void addIngredient(Ingredient ingredient);
 	public void addComment(Comment comment);
-	public int getRecipe();
+	public int getRecipeId();
+	public String getRecipeName();
 	public String getDirection();
 	public Date getDateAdded();
 	public ArrayList<Tag> getTagList();
