@@ -5,7 +5,8 @@ import java.util.Date;
 
 public class Recipe {
 	
-	private int recipeId;
+	private int recipeId = 1;
+	private String recipeName;
 	private String direction;
 	private Date dateAdded;
 	private ArrayList<Tag> tagList;
@@ -14,6 +15,7 @@ public class Recipe {
 	private ArrayList<Comment> commentList;
 	
 	public Recipe(){
+		recipeId++;
 		dateAdded=new Date();
 		tagList=new ArrayList<>();
 		categoryList=new ArrayList<>();
@@ -23,6 +25,10 @@ public class Recipe {
 	
 	public void setRecipeId(int recipeId){
 		this.recipeId=recipeId;
+	}
+	
+	public void setRecipeName(String recipeName){
+		this.recipeName=recipeName;
 	}
 	
 	public void setDirection(String direction){
@@ -51,6 +57,10 @@ public class Recipe {
 	
 	public int getRecipeId(){
 		return recipeId;
+	}
+	
+	public String getRecipeName(){
+		return recipeName;
 	}
 	
 	public String getDirection(){
