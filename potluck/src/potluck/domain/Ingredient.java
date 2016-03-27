@@ -12,7 +12,7 @@ public class Ingredient {
 	/**
 	 * Fields to access ingredient id
 	 */
-	private int ingredient_id = 1;
+	private int ingredient_id;
 
 	/**
 	 * Fields to access ingredient name
@@ -28,19 +28,20 @@ public class Ingredient {
 	 * Default Constructor
 	 */
 	public Ingredient() {
-		ingredient_id++;
+		ingredient_id = 0;
 		name = null;
 		measurement = null;
 	}
 
 	/**
-	 * Constructor for name and measurement parameters
+	 * Constructor for id, name and measurement parameters
 	 * 
+	 * @param ingredient_id
 	 * @param name
 	 * @param measurement
 	 */
-	public Ingredient(String name, String measurement) {
-		ingredient_id++;
+	public Ingredient(int ingredient_id, String name, String measurement) {
+		this.ingredient_id = ingredient_id;
 		this.name = name;
 		this.measurement = measurement;
 	}
