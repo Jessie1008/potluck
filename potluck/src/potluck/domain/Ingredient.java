@@ -28,7 +28,6 @@ public class Ingredient {
 	 * Default Constructor
 	 */
 	public Ingredient() {
-		ingredient_id = 0;
 		name = null;
 		measurement = null;
 	}
@@ -40,8 +39,8 @@ public class Ingredient {
 	 * @param name
 	 * @param measurement
 	 */
-	public Ingredient(int ingredient_id, String name, String measurement) {
-		this.ingredient_id = ingredient_id;
+	public Ingredient( String name, String measurement) {
+		
 		this.name = name;
 		this.measurement = measurement;
 	}
