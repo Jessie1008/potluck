@@ -3,7 +3,7 @@ package potluck.domain;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class RecipeController {
+public class RecipeController implements RecipeControllerInterface {
 	
 	private Recipe model;
 	
@@ -12,6 +12,10 @@ public class RecipeController {
 	}
 	public void setRecipeId(int recipeId){
 		model.setRecipeId(recipeId);
+	}
+	
+	public void setRecipeName(String recipeName){
+		model.setDirection(recipeName);
 	}
 	
 	public void setDirection(String direction){
@@ -40,6 +44,10 @@ public class RecipeController {
 	
 	public int getRecipeId(){
 		return model.getRecipeId();
+	}
+	
+	public String getRecipeName() {
+		return model.getRecipeName();
 	}
 	
 	public String getDirection(){
@@ -71,4 +79,5 @@ public class RecipeController {
 		
 		return model.toString();
 	}
+	
 }
