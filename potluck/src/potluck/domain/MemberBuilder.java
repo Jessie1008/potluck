@@ -1,7 +1,5 @@
 package potluck.domain;
 
-import java.util.ArrayList;
-
 public class MemberBuilder {
 	private String password;
 	private String userName;
@@ -21,6 +19,9 @@ public class MemberBuilder {
 	}
 	public Member build() {
 		return new Member(this);
+	}
+	public Administrator buildAdministrator(){
+		return new Administrator(this);
 	}
 	public MemberBuilder password(String password) {
 		this.password = password;

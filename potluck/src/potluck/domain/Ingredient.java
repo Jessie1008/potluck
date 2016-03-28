@@ -2,7 +2,6 @@ package potluck.domain;
 
 /**
  * Implement adding ingredients of a recipe.
- * 
  * @author XXXXXX Zhe Huang
  * @version 1.0.0 Date March 12, 2016
  * @since 1.8.0_73
@@ -98,5 +97,11 @@ public class Ingredient {
 	public void setMeasurement(String measurement) {
 		this.measurement = measurement;
 	}
-
+public String toString(){
+	StringBuilder sb=new StringBuilder();
+	sb.append(name);
+	sb.append(": ");
+	sb.append(measurement);
+	return sb.toString();
+}
 }

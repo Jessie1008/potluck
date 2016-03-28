@@ -113,13 +113,24 @@ public class Member {
 
 	public boolean confirmMember() {
 
-		ArrayList<Member> arrayList = potLuckDatabase.getInstance().getMemberList();
+		ArrayList<Member> arrayList = PotLuckDatabase.getInstance().getMemberList();
 		for (int i = 0; i < arrayList.size(); i++) {
 			if (arrayList.get(i).equals(this)) {
 				return true;
 			}
 		}
 		return false;
+	}
+	
+	public void addRecipe(Recipe recipe){
+	   recipeList.add(recipe);
+	}
+	public void editRecipe(Recipe recipe){
+		
+	}
+
+	public void displayRecipes() {
+		System.out.println(recipeList.toString());		
 	}
 
 }

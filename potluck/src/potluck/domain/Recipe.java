@@ -200,24 +200,24 @@ public class Recipe {
 	public String toString(){
 		StringBuffer text = new StringBuffer();
 		text.append("Recipe Id: " + recipeId);
-		text.append("/nName: " + recipeName);
-		text.append("/nDirection: " + direction);
-		text.append("/nDate Added: " + dateAdded.toString());
-		text.append("/nTag: ");
+		text.append("\nName: " + recipeName);
+		text.append("\nDirection: " + direction);
+		text.append("\nDate Added: " + dateAdded.toString());
+		text.append("\nTag: ");
 		for (Tag tag: tagList){
 			text.append(tag.toString());
 		}
-		text.append("/nCategory: ");
+		text.append("\nCategory: ");
 		for (Category category: categoryList){
 			text.append(category.toString());
 		}
-		text.append("/nIngredient: ");
+		text.append("\nIngredient: ");
 		for (Ingredient ingredient: ingredientList){
-			text.append("  "+ingredient.toString()+"/n");
+			text.append("  "+ingredient.toString()+"\n");
 		}
-		text.append("/nComment: ");
+		text.append("\nComment: ");
 		for (Comment comment: commentList){
-			text.append("  "+comment.toString()+"/n");
+			text.append("  "+comment.toString()+"\n");
 		}
 		return text.toString();
 	}

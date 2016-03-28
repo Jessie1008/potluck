@@ -23,6 +23,12 @@ public class Tag {
 	public void setTagText(String tagText) {
 		this.tagText = tagText;
 	}
-	
+	@Override
+	public String toString(){
+		StringBuilder sb=new StringBuilder();
+		sb.append(tagID);
+		sb.append(". "+tagText+"; ");
+		return sb.toString();
+	}
 
 }
