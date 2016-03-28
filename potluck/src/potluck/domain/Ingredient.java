@@ -2,7 +2,7 @@ package potluck.domain;
 
 /**
  * Implement adding ingredients of a recipe.
- * @author XXXXXX Zhe Huang
+ * @author  Chunyan Wang, Zhe Huang, Qing Zhang, Jian Liu 
  * @version 1.0.0 Date March 12, 2016
  * @since 1.8.0_73
  */
