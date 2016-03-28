@@ -2,9 +2,9 @@ package potluck.domain;
 
 import java.util.Scanner;
 
-public class PortLuckLauncher {
+public class PotLuckLauncher {
 	public static void main(String[] args) {
-		PortLuckLauncher launcher = new PortLuckLauncher();
+		PotLuckLauncher launcher = new PotLuckLauncher();
 		Scanner input = new Scanner(System.in);
 		boolean login = false;
 		do {

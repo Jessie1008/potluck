@@ -2,6 +2,7 @@ package potluck.domain;
 
 import java.util.ArrayList;
 
+
 public class PotLuckDatabase {
 	private static final PotLuckDatabase potLuckDatabase = new PotLuckDatabase();
 	private ArrayList<Member> memberList;
