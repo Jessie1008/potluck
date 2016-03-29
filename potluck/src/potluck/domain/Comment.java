@@ -4,9 +4,9 @@ import java.util.Date;
 
 /**
  * Implement adding comments of a recipe.
- * 
- * @author XXXXXX Zhe Huang
- * @version 1.0.0 Date March 12, 2016
+ * Date March 26, 2016
+ * @author Chunyan Wang, Jian Liu, Qing Zhang, Zhe Huang
+ * @version 1.0.0 
  * @since 1.8.0_73
  */
 public class Comment {
