@@ -1,26 +1,52 @@
 package potluck.domain;
+/**
+ * Implementation of RecipeController interface
+ * Allows member to perform desire functions on recipe adding ingredients of a recipe.
+ * 
+ * @author Chunyan Wang, Jian Liu, Qing Zhang, Zhe Huang
+ * @version 1.0.0 Date March 26, 2016
+ * @since 1.8.0_73
+ * 
+ * @see java.util.ArrayList
+ */
 
 import java.util.ArrayList;
 
 public class RecipeControllerImpl implements RecipeController {
+	/** 
+	 * Reference to instance of Member
+	 */
 	Member member = null;
 
+	/**
+	 * Default constructor.
+	 */
 	public RecipeControllerImpl() {
 		member = PotLuckDatabase.getInstance().getCurrentMember();
 	}
 
+	/**
+	 * add a recipe to the list of the member
+	 * @param a Recipe object
+	 */
 	@Override
 	public void addRecipe(Recipe recipe) {
 		// TODO Auto-generated method stub
 		member.addRecipe(recipe);
 	}
-
+	
+	/**
+	 * show all the recipes created by the member
+	 */
 	@Override
 	public void displayRecipes() {
 		member.displayRecipes();
 
 	}
 
+	/**
+	 * show all the recipes in the database
+	 */
 	@Override
 	public void displayAllRecipes() {
 		ArrayList<Member> members = PotLuckDatabase.getInstance().getMemberList();
@@ -29,12 +55,19 @@ public class RecipeControllerImpl implements RecipeController {
 		}
 	}
 
+	/**
+	 * delete a recipes
+	 */
 	@Override
 	public void deleteRecipe() {
 		// TODO Auto-generated method stub
 
 	}
 
+	/**
+	 * edit a recipes
+	 * @param a Recipe object
+	 */
 	@Override
 	public void editRecipe(Recipe recipe) {
 		// TODO Auto-generated method stub

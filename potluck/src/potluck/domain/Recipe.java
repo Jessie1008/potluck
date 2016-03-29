@@ -1,4 +1,14 @@
 package potluck.domain;
+/**
+ * Implementation of the recipe.
+ * 
+ * @author Chunyan Wang, Jian Liu, Qing Zhang, Zhe Huang
+ * @version 1.0.0 Date March 26, 2016
+ * @since 1.8.0_73
+ * 
+ * @see java.util.ArrayList
+ * @see java.util.Date
+ */
 
 import java.util.ArrayList;
 import java.util.Date;

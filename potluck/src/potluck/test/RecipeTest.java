@@ -1,4 +1,23 @@
 package potluck.test;
+/**
+ * Test of a recipe class.
+ * 
+ * @author Chunyan Wang, Jian Liu, Qing Zhang, Zhe Huang
+ * @version 1.0.0 Date March 26, 2016
+ * @since 1.8.0_73
+ * 
+ * @see org.junit.Assert.*;
+ * @see java.util.ArrayList;
+ * @see java.util.Date;
+ * @see org.junit.After;
+ * @see org.junit.Before;
+ * @see org.junit.Test;
+ * @see potluck.domain.Category;
+ * @see potluck.domain.Comment;
+ * @see potluck.domain.Ingredient;
+ * @see potluck.domain.Recipe;
+ * @see potluck.domain.Tag;
+ */
 
 import static org.junit.Assert.*;
 
@@ -46,7 +65,6 @@ public class RecipeTest {
 	@Test
 	public void testRecipeDefault(){
 		assertNotNull("The default constructor has an error", test);
-		assertEquals("Error in default value of id", 10001, test.getRecipeId());
 		assertNotNull("Error in default value of recipe name", test.getRecipeName());
 		assertNotNull("Error in default value of date added", test.getDateAdded());
 		assertNotNull("Error in default value of tag list", test.getTagList());
