@@ -30,7 +30,9 @@ public class Tag {
 	 * Constructor with two parameters
 	 * 
 	 * @param id
+	 * value of tag id
 	 * @param tagText
+	 * String of tag text
 	 */
 	public Tag(int id, String tagText) {
 		this.tagID = id;

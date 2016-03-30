@@ -4,7 +4,8 @@ package potluck.domain;
  * Implement adding a category of a recipe.
  * 
  * @author Chunyan Wang, Jian Liu, Qing Zhang, Zhe Huang
- * @version 1.0.0 Date March 26, 2016
+ * @version 1.0.0 
+ * Date March 26, 2016
  * @since 1.8.0_73
  */
 public class Administrator extends Member {

@@ -4,12 +4,11 @@ package potluck.domain;
  * 
  * @author Chunyan Wang, Jian Liu, Qing Zhang, Zhe Huang
  * @version 1.0.0 
+ * @see java.util.ArrayList
  * Date March 26, 2016
  * @since 1.8.0_73
  */
 import java.util.ArrayList;
-
-import javax.management.MBeanAttributeInfo;
 
 public abstract class Member {
 	
@@ -153,8 +152,8 @@ public abstract class Member {
 	}
 	/**
 	 * setRecipeList to RecipeList
-	 * @param 
-	 * recipeList  set RecipeList to ArrayList<Recipe>
+	 * @param  recipeList  
+	 * set RecipeList to ArrayList<Recipe>
 	 */
 	public void setRecipeList(ArrayList<Recipe> recipeList) {
 		this.recipeList = recipeList;

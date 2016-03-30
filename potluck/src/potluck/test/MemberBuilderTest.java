@@ -1,5 +1,16 @@
 package potluck.test;
-
+/**
+ * Test methods in class MemberBuilder.
+ * 
+ * @author Chunyan Wang, Jian Liu, Qing Zhang, Zhe Huang
+ * @see org.junit.Assert
+ * @see org.junit.After
+ * @see org.junit.Before
+ * @see org.junit.Test
+ * @see potluck.domain.MemberBuilder
+ * @version 1.0.0 Date March 26, 2016
+ * @since 1.8.0_73
+ */
 import static org.junit.Assert.*;
 
 import org.junit.After;
