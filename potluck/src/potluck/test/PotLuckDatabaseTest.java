@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import potluck.domain.Member;
+import potluck.domain.MemberBuilder;
 import potluck.domain.PotLuckDatabase;
 
 /**
@@ -55,7 +56,7 @@ public class PotLuckDatabaseTest {
 	 */
 	@Test
 	public void testGetMemberList() {
-		assertEquals("Errors occur in method getMemberList", 1,
+		assertEquals("Errors occur in method getMemberList", 2,
 				problem.getMemberList().size());
 	}
 
@@ -82,7 +83,7 @@ public class PotLuckDatabaseTest {
 	 */
 	@Test
 	public void testSetCurrentMember() {
-		Member expected = new Member();
+		Member expected = MemberBuilder.create().buildNormalUser();
 		problem.setCurrentMember(expected);
 		Member actual = problem.getCurrentMember();
 		assertEquals("Errors occur in method setCurrentMember", expected,
@@ -94,7 +95,7 @@ public class PotLuckDatabaseTest {
 	 */
 	@Test
 	public void testGetCurrentMember() {
-		Member expected = new Member();
+		Member expected = MemberBuilder.create().buildAdministrator();
 		problem.setCurrentMember(expected);
 		Member actual = problem.getCurrentMember();
 		assertEquals("Errors occur in method setCurrentMember", expected,

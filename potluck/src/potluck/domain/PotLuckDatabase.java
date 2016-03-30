@@ -61,9 +61,10 @@ public class PotLuckDatabase {
 	 * Add new members to list of member
 	 */
 	private void addMemberList() {
-		Member member = MemberBuilder.create().password("1234")
-				.username("potluck").build();
+		Member member = MemberBuilder.create().password("1234").username("potluck").buildNormalUser();
+		Member administrator = MemberBuilder.create().password("789").username("admin").buildNormalUser();
 		memberList.add(member);
+		memberList.add(administrator);
 	}
 
 	/**

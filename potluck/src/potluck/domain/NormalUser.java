@@ -7,20 +7,21 @@ package potluck.domain;
  * @version 1.0.0 Date March 26, 2016
  * @since 1.8.0_73
  */
-public class Administrator extends Member {
+
+public class NormalUser extends Member {
 	/**
-	 * initialized constructor
+	 * Initialized Constructor
 	 * 
 	 * @param memberBuilder
-	 * the reference value of MemberBuilder ogject
 	 */
-	public Administrator(MemberBuilder memberBuilder) {
+	public NormalUser(MemberBuilder memberBuilder) {
 		super(memberBuilder);
 	}
 
+	
+
 	/**
-	 * add recipe
-	 * 
+	 * add recipe by normal user
 	 */
 	@Override
 	public void addRecipe(Recipe recipe) {
@@ -28,7 +29,7 @@ public class Administrator extends Member {
 	}
 
 	/**
-	 * edit recipe
+	 * edit recipe by normal user
 	 */
 	@Override
 	public void editRecipe(Recipe recipe) {
@@ -36,19 +37,11 @@ public class Administrator extends Member {
 	}
 
 	/**
-	 * display recipes of this member
+	 * display recipe by normal user
 	 */
 	@Override
 	public void displayRecipes() {
 		System.out.println(getRecipeList().toString());
 	}
 
-	/**
-	 * delete recipe
-	 * @param recipe to hold the reference value of recipe
-	 */
-
-	public void deleteRecipe(Recipe recipe) {
-
-	}
 }

@@ -1,8 +1,19 @@
 package potluck.domain;
-
+/**
+ * Implementation of the launcher .
+ * 
+ * @author Chunyan Wang, Jian Liu, Qing Zhang, Zhe Huang
+ * @version 1.0.0 
+ * @see java.util.Scanner
+ * @since 1.8.0_73
+ */
 import java.util.Scanner;
 
 public class PotLuckLauncher {
+	/**
+	 * main method, show login menu for the system
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		PotLuckLauncher launcher = new PotLuckLauncher();
 		Scanner input = new Scanner(System.in);
@@ -15,7 +26,7 @@ public class PotLuckLauncher {
 			//String password = input.next();
 			String userName ="potluck";
 			String password="1234";
-			Member member = MemberBuilder.create().username(userName).password(password).build();
+			Member member = MemberBuilder.create().username(userName).password(password).buildNormalUser();
 			if (member.confirmMember()) {
 				PotLuckDatabase.getInstance().setCurrentMember(member);
 				login = true;
@@ -29,6 +40,9 @@ public class PotLuckLauncher {
 		} while (!login);
 	}
 
+	/**
+	 * show the main menu 
+	 */
 	public void showMainMenu() {
 		int menu;
 		Scanner input = new Scanner(System.in);

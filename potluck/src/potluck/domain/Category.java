@@ -24,7 +24,9 @@ public class Category {
 	 * Constructor with two parameters
 	 * 
 	 * @param id
+	 *  category id
 	 * @param name
+	 * category name
 	 */
 	public Category(int id, String name) {
 		// TODO Auto-generated constructor stub
@@ -36,6 +38,7 @@ public class Category {
 	 * Getter for category id
 	 * 
 	 * @return
+	 * the value of category ID
 	 */
 	public int getCategoryID() {
 		return categoryID;
@@ -45,6 +48,7 @@ public class Category {
 	 * Setter for category id
 	 * 
 	 * @param categoryID
+	 * return the value of category id
 	 */
 	public void setCategoryID(int categoryID) {
 		this.categoryID = categoryID;
@@ -54,6 +58,7 @@ public class Category {
 	 * Getter for category name
 	 * 
 	 * @return
+	 * the category name
 	 */
 	public String getCategoryName() {
 		return categoryName;
@@ -63,6 +68,7 @@ public class Category {
 	 * Setter for category name
 	 * 
 	 * @param categoryName
+	 * the value of category name
 	 */
 	public void setCategoryName(String categoryName) {
 		this.categoryName = categoryName;
@@ -72,6 +78,7 @@ public class Category {
 	 * Reveal the message
 	 * 
 	 * @return String
+	 * the information of category
 	 */
 	@Override
 	public String toString() {

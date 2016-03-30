@@ -70,6 +70,7 @@ public class Comment {
 	 * Setter for comment id
 	 * 
 	 * @param comment_id
+	 * comment id
 	 */
 	public void setComment_id(int comment_id) {
 		this.comment_id = comment_id;
@@ -78,7 +79,8 @@ public class Comment {
 	/**
 	 * Getter for creating comments date
 	 * 
-	 * @return String
+	 * @return Date
+	 * create date
 	 */
 	public Date getDate_created() {
 		return date_created;
@@ -88,6 +90,7 @@ public class Comment {
 	 * Setter for creating comments date
 	 * 
 	 * @param date_created
+	 * the value of date created
 	 */
 	public void setDate_created(Date date_created) {
 		this.date_created = date_created;
@@ -97,6 +100,7 @@ public class Comment {
 	 * Getter for rank
 	 * 
 	 * @return int
+	 * value of the rank
 	 */
 	public int getRank() {
 		return rank;
@@ -106,6 +110,7 @@ public class Comment {
 	 * Setter for rank
 	 * 
 	 * @param rank
+	 * value of rank
 	 */
 	public void setRank(int rank) {
 		this.rank = rank;
@@ -115,6 +120,7 @@ public class Comment {
 	 * Getter for comment text
 	 * 
 	 * @return String
+	 * comment text
 	 */
 	public String getComment_text() {
 		return comment_text;
@@ -124,6 +130,7 @@ public class Comment {
 	 * Setter for comment text
 	 * 
 	 * @param comment_text
+	 * comment text
 	 */
 	public void setComment_text(String comment_text) {
 		this.comment_text = comment_text;
