@@ -9,7 +9,7 @@ import org.junit.Test;
 import potluck.domain.Ingredient;
 
 /**
- * Test methods in class Ingredient.
+ * Test methods in class Ingredient. Date March 26, 2016
  * 
  * @author Chunyan Wang, Jian Liu, Qing Zhang, Zhe Huang
  * @see org.junit.Assert
@@ -17,7 +17,7 @@ import potluck.domain.Ingredient;
  * @see org.junit.Before
  * @see org.junit.Test
  * @see potluck.domain.Ingredient
- * @version 1.0.0 Date March 26, 2016
+ * @version 1.0.0
  * @since 1.8.0_73
  */
 public class IngredientTest {

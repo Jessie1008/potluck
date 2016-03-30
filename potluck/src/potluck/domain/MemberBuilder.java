@@ -140,6 +140,7 @@ public class MemberBuilder {
 	 * set password to password
 	 * 
 	 * @param password
+	 *    the value of password
 	 * @return the memberBuilder instance
 	 */
 
@@ -152,6 +153,7 @@ public class MemberBuilder {
 	 * set userName to userName
 	 * 
 	 * @param username
+	 * the value of user name
 	 * @return the memberBuilder instance
 	 */
 
@@ -164,6 +166,7 @@ public class MemberBuilder {
 	 * set alias to alias
 	 * 
 	 * @param alias
+	 * the value of alias
 	 * @return the memberBuilder instance
 	 */
 
@@ -175,7 +178,7 @@ public class MemberBuilder {
 	/**
 	 * set memberID to memberID
 	 * 
-	 * @param memberID
+	 * @param memberID the value of member id
 	 * @return the memberBuilder instance
 	 */
 
@@ -187,7 +190,7 @@ public class MemberBuilder {
 	/**
 	 * set firstName to firstName
 	 * 
-	 * @param firstName
+	 * @param firstName the value of first name
 	 * @return the memberBuilder instance
 	 */
 
@@ -199,7 +202,7 @@ public class MemberBuilder {
 	/**
 	 * set lastName to lastName
 	 * 
-	 * @param lastName
+	 * @param lastName the value of last name
 	 * @return the memberBuilder instance
 	 */
 
@@ -211,7 +214,7 @@ public class MemberBuilder {
 	/**
 	 * set email to email
 	 * 
-	 * @param email
+	 * @param email the String of email
 	 * @return the memberBuilder instance
 	 */
 
@@ -223,17 +226,13 @@ public class MemberBuilder {
 	/**
 	 * set admin to admin
 	 * 
-	 * @param admin
+	 * @param admin the tyoe of member
 	 * @return the memberBuilder instance
 	 */
 	public MemberBuilder admin(boolean admin) {
 		this.isAdmin = admin;
 		return this;
 	}
-	/**
-	 * create the new member
-	 * 
-	 * @return the instance of new member
-	 */
+	
 
 }

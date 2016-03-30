@@ -153,7 +153,7 @@ public abstract class Member {
 	/**
 	 * setRecipeList to RecipeList
 	 * @param  recipeList  
-	 * set RecipeList to ArrayList<Recipe>
+	 * set RecipeList to ArrayList
 	 */
 	public void setRecipeList(ArrayList<Recipe> recipeList) {
 		this.recipeList = recipeList;

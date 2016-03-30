@@ -9,7 +9,7 @@ import org.junit.Test;
 import potluck.domain.Category;
 
 /**
- * Test methods in class Category.
+ * Test methods in class Category. sDate March 26, 2016
  * 
  * @author Chunyan Wang, Jian Liu, Qing Zhang, Zhe Huang
  * @see org.junit.Assert
@@ -17,7 +17,7 @@ import potluck.domain.Category;
  * @see org.junit.Before
  * @see org.junit.Test
  * @see potluck.domain.Category
- * @version 1.0.0 Date March 26, 2016
+ * @version 1.0.0
  * @since 1.8.0_73
  */
 public class CategoryTest {

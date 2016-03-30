@@ -4,12 +4,12 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>280</x>
+      <x>350</x>
       <y>350</y>
       <w>168</w>
-      <h>322</h>
+      <h>329</h>
     </coordinates>
-    <panel_attributes>Member
+    <panel_attributes>/Member/
 --
 -memberId: int
 -isAdmin: Boolean
@@ -36,16 +36,17 @@
 +setFirstName (firstName:String)
 +setLastName (lastName: String)
 +setEmail(email: String)
-+getRecipes(): ArrayList &lt;Recipe&gt; 
-+addRecipe(recipe: Recipe): void
-+displayRecipe():void</panel_attributes>
+/+getRecipes(): ArrayList &lt;Recipe&gt;/
+/+addRecipe(recipe: Recipe): void/
+/+displayRecipe():void/
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>504</y>
+      <x>28</x>
+      <y>490</y>
       <w>210</w>
       <h>371</h>
     </coordinates>
@@ -89,7 +90,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>490</x>
+      <x>560</x>
       <y>651</y>
       <w>203</w>
       <h>105</h>
@@ -110,7 +111,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>707</x>
+      <x>777</x>
       <y>224</y>
       <w>147</w>
       <h>133</h>
@@ -140,7 +141,7 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>728</x>
+      <x>798</x>
       <y>469</y>
       <w>147</w>
       <h>105</h>
@@ -162,7 +163,7 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>483</x>
+      <x>553</x>
       <y>343</y>
       <w>189</w>
       <h>245</h>
@@ -196,18 +197,18 @@ Responsibilities
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>203</x>
+      <x>231</x>
       <y>595</y>
-      <w>91</w>
+      <w>133</w>
       <h>21</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>441</x>
+      <x>511</x>
       <y>413</y>
       <w>56</w>
       <h>21</h>
@@ -218,7 +219,7 @@ Responsibilities
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>581</x>
+      <x>651</x>
       <y>581</y>
       <w>35</w>
       <h>84</h>
@@ -230,7 +231,7 @@ m1=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>665</x>
+      <x>735</x>
       <y>483</y>
       <w>77</w>
       <h>28</h>
@@ -242,7 +243,7 @@ m1=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>252</x>
+      <x>322</x>
       <y>700</y>
       <w>182</w>
       <h>210</h>
@@ -272,7 +273,7 @@ _+ getInstance(): PotluckDatabase_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>588</x>
+      <x>658</x>
       <y>7</y>
       <w>203</w>
       <h>119</h>
@@ -295,7 +296,7 @@ _+ getInstance(): PotluckDatabase_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>490</x>
+      <x>560</x>
       <y>49</y>
       <w>112</w>
       <h>21</h>
@@ -306,7 +307,7 @@ _+ getInstance(): PotluckDatabase_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
+      <x>406</x>
       <y>658</y>
       <w>21</w>
       <h>56</h>
@@ -317,13 +318,14 @@ _+ getInstance(): PotluckDatabase_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>322</x>
+      <x>392</x>
       <y>0</y>
       <w>175</w>
       <h>147</h>
     </coordinates>
-    <panel_attributes>RecipeController
-&lt;&lt;interface&gt;&gt;
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+RecipeController
+
 --
 
 --
@@ -337,8 +339,8 @@ _+ getInstance(): PotluckDatabase_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>308</x>
-      <y>189</y>
+      <x>378</x>
+      <y>182</y>
       <w>189</w>
       <h>112</h>
     </coordinates>
@@ -346,7 +348,7 @@ _+ getInstance(): PotluckDatabase_
 --
 -member : Member
 --
-+ RecipeControllerImpl()
++ RecipeControllerImpl(member: Member)
 + addRecipe(recipe : Recipe): void
 + editRecipe(recipe: Recipe) : void
 + deleteRecipe(recipe: Recipe): void
@@ -357,29 +359,29 @@ _+ getInstance(): PotluckDatabase_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
+      <x>462</x>
       <y>140</y>
       <w>21</w>
-      <h>63</h>
+      <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>385</x>
-      <y>294</y>
+      <x>455</x>
+      <y>287</y>
       <w>21</w>
-      <h>70</h>
+      <h>77</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>665</x>
+      <x>735</x>
       <y>350</y>
       <w>133</w>
       <h>84</h>
@@ -390,16 +392,19 @@ _+ getInstance(): PotluckDatabase_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
+      <x>70</x>
       <y>364</y>
       <w>217</w>
-      <h>70</h>
+      <h>98</h>
     </coordinates>
     <panel_attributes>Administrator
 --
 
 --
 +Administrator(memberBuilder: MemberBuilder)
++addRecipe(recipe:Recipe): void
++editRecipe(recipe: Recipe): void
++displayRecipe(recipe : Recipe): void
 +deleteRecipe(recipe:Recipe): void
 </panel_attributes>
     <additional_attributes/>
@@ -407,7 +412,7 @@ _+ getInstance(): PotluckDatabase_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
+      <x>280</x>
       <y>399</y>
       <w>84</w>
       <h>21</h>
@@ -418,18 +423,18 @@ _+ getInstance(): PotluckDatabase_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>98</x>
-      <y>427</y>
+      <x>168</x>
+      <y>455</y>
       <w>21</w>
-      <h>91</h>
+      <h>49</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>532</x>
+      <x>602</x>
       <y>84</y>
       <w>63</w>
       <h>266</h>
@@ -440,7 +445,7 @@ _+ getInstance(): PotluckDatabase_
   <element>
     <id>Text</id>
     <coordinates>
-      <x>539</x>
+      <x>609</x>
       <y>175</y>
       <w>70</w>
       <h>49</h>
@@ -452,7 +457,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>742</x>
+      <x>812</x>
       <y>119</y>
       <w>21</w>
       <h>119</h>
@@ -463,7 +468,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>749</x>
+      <x>819</x>
       <y>154</y>
       <w>70</w>
       <h>49</h>
@@ -471,5 +476,46 @@ style=wordwrap</panel_attributes>
     <panel_attributes>creates/uses
 style=wordwrap</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>238</y>
+      <w>217</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>NormalUser
+--
+
+--
++NormalUser(memberBuilder: MemberBuilder)
++addRecipe(recipe:Recipe): void
++editRecipe(recipe: Recipe): void
++displayRecipe(recipe : Recipe): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>301</y>
+      <w>119</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>150.0;70.0;150.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>42</x>
+      <y>266</y>
+      <w>42</w>
+      <h>238</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;320.0;10.0;10.0;40.0;10.0</additional_attributes>
   </element>
 </diagram>

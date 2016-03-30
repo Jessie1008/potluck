@@ -12,7 +12,7 @@ public class NormalUser extends Member {
 	/**
 	 * Initialized Constructor
 	 * 
-	 * @param memberBuilder
+	 * @param memberBuilder the reference of the MemberBuilder object
 	 */
 	public NormalUser(MemberBuilder memberBuilder) {
 		super(memberBuilder);

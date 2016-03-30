@@ -15,6 +15,7 @@ import potluck.domain.Comment;
  * 
  * @author Chunyan Wang, Jian Liu, Qing Zhang, Zhe Huang
  * @see org.junit.Assert
+ * @see java.util.Date
  * @see org.junit.After
  * @see org.junit.Before
  * @see org.junit.Test

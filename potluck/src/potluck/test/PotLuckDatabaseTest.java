@@ -11,15 +11,17 @@ import potluck.domain.MemberBuilder;
 import potluck.domain.PotLuckDatabase;
 
 /**
- * Test methods in class potLuckDatabase .
+ * Test methods in class potLuckDatabase. Date March 26, 2016
  * 
  * @author Chunyan Wang, Jian Liu, Qing Zhang, Zhe Huang
  * @see org.junit.Assert
  * @see org.junit.After
  * @see org.junit.Before
  * @see org.junit.Test
+ * @see potluck.domain.Member
+ * @see potluck.domain.MemberBuilder
  * @see potluck.domain.PotLuckDatabase
- * @version 1.0.0 Date March 26, 2016
+ * @version 1.0.0
  * @since 1.8.0_73
  */
 public class PotLuckDatabaseTest {

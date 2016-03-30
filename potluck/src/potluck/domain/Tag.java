@@ -1,10 +1,10 @@
 package potluck.domain;
 
 /**
- * Implement adding tags of a recipe.
+ * Implement adding tags of a recipe. Date March 26, 2016
  * 
  * @author Chunyan Wang, Jian Liu, Qing Zhang, Zhe Huang
- * @version 1.0.0 Date March 26, 2016
+ * @version 1.0.0
  * @since 1.8.0_73
  */
 public class Tag {
@@ -30,9 +30,9 @@ public class Tag {
 	 * Constructor with two parameters
 	 * 
 	 * @param id
-	 * value of tag id
+	 *            value of tag id
 	 * @param tagText
-	 * String of tag text
+	 *            String of tag text
 	 */
 	public Tag(int id, String tagText) {
 		this.tagID = id;
@@ -42,7 +42,7 @@ public class Tag {
 	/**
 	 * Getter for tag id
 	 * 
-	 * @return
+	 * @return int return tag id
 	 */
 	public int getTagID() {
 		return tagID;
@@ -52,6 +52,7 @@ public class Tag {
 	 * Setter for tag id
 	 * 
 	 * @param tagID
+	 *            the tag id
 	 */
 	public void setTagID(int tagID) {
 		this.tagID = tagID;
@@ -60,7 +61,7 @@ public class Tag {
 	/**
 	 * Getter for tag text
 	 * 
-	 * @return
+	 * @return String return the text of tag
 	 */
 	public String getTagText() {
 		return tagText;
@@ -70,6 +71,7 @@ public class Tag {
 	 * Setter for tag text
 	 * 
 	 * @param tagText
+	 *            the tag text
 	 */
 	public void setTagText(String tagText) {
 		this.tagText = tagText;
@@ -78,7 +80,7 @@ public class Tag {
 	/**
 	 * Reveal the message
 	 * 
-	 * @return String
+	 * @return String return the tag information
 	 */
 	@Override
 	public String toString() {

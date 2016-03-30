@@ -3,18 +3,17 @@ package potluck.domain;
 import java.util.ArrayList;
 
 /**
- * Database to save information of recipes
+ * Database to save information of recipes. Date March 26, 2016
  * 
  * @author Chunyan Wang, Jian Liu, Qing Zhang, Zhe Huang
- * @version 1.0.0 
+ * @version 1.0.0
  * @see java.util.ArrayList
- * Date March 26, 2016
  * @since 1.8.0_73
  */
 public class PotLuckDatabase {
 
 	/**
-	 * {@value} Initialize the database of project
+	 * Initialize the object of database
 	 */
 	private static final PotLuckDatabase potLuckDatabase = new PotLuckDatabase();
 
@@ -53,7 +52,7 @@ public class PotLuckDatabase {
 	/**
 	 * Getter for the single instance
 	 * 
-	 * @return potLuckDatabase
+	 * @return PotLuckDatabase return the database
 	 */
 	public static PotLuckDatabase getInstance() {
 		return potLuckDatabase;
@@ -63,8 +62,10 @@ public class PotLuckDatabase {
 	 * Add new members to list of member
 	 */
 	private void addMemberList() {
-		Member member = MemberBuilder.create().password("1234").username("potluck").buildNormalUser();
-		Member administrator = MemberBuilder.create().password("789").username("admin").buildNormalUser();
+		Member member = MemberBuilder.create().password("1234")
+				.username("potluck").buildNormalUser();
+		Member administrator = MemberBuilder.create().password("789")
+				.username("admin").buildNormalUser();
 		memberList.add(member);
 		memberList.add(administrator);
 	}
@@ -100,7 +101,7 @@ public class PotLuckDatabase {
 	/**
 	 * Getter for list of member
 	 * 
-	 * @return ArrayList<Member>
+	 * @return return the ArrayList of member
 	 */
 	public ArrayList<Member> getMemberList() {
 		return memberList;
@@ -109,7 +110,7 @@ public class PotLuckDatabase {
 	/**
 	 * Getter for list of tag
 	 * 
-	 * @return ArrayList<Tag>
+	 * @return return the ArrayList of tag
 	 */
 	public ArrayList<Tag> getTagList() {
 		return tagList;
@@ -118,7 +119,7 @@ public class PotLuckDatabase {
 	/**
 	 * Getter for list of category
 	 * 
-	 * @return ArrayList<Category>
+	 * @return return the ArrayList of category
 	 */
 	public ArrayList<Category> getCategoryList() {
 		return categoryList;
@@ -137,7 +138,7 @@ public class PotLuckDatabase {
 	/**
 	 * Getter for current member
 	 * 
-	 * @return Member
+	 * @return Member return the current member
 	 */
 	public Member getCurrentMember() {
 		return currentMember;

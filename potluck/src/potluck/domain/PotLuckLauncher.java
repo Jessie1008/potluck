@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class PotLuckLauncher {
 	/**
 	 * main method, show login menu for the system
-	 * @param args
+	 * @param args the value of parameter
 	 */
 	public static void main(String[] args) {
 		PotLuckLauncher launcher = new PotLuckLauncher();
