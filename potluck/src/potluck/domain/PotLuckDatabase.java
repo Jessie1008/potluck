@@ -6,7 +6,9 @@ import java.util.ArrayList;
  * Database to save information of recipes
  * 
  * @author Chunyan Wang, Jian Liu, Qing Zhang, Zhe Huang
- * @version 1.0.0 Date March 26, 2016
+ * @version 1.0.0 
+ * @see java.util.ArrayList
+ * Date March 26, 2016
  * @since 1.8.0_73
  */
 public class PotLuckDatabase {
