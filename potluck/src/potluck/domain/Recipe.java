@@ -75,7 +75,8 @@ public class Recipe {
 	
 	/** 
 	 * Mutator for recipe id field
-	 * @param recipe id
+	 * @param recipeId
+	 * Integer value of recipe id
 	 */
 	public void setRecipeId(int recipeId){
 		this.recipeId=recipeId;
@@ -83,7 +84,8 @@ public class Recipe {
 	
 	/** 
 	 * Mutator for recipe name field
-	 * @param recipe name
+	 * @param recipeName
+	 * String of recipe name
 	 */
 	public void setRecipeName(String recipeName){
 		this.recipeName=recipeName;
@@ -91,7 +93,8 @@ public class Recipe {
 	
 	/** 
 	 * Mutator for recipe direction field
-	 * @param recipe direction
+	 * @param direction
+	 * String of recipe direction
 	 */
 	public void setDirection(String direction){
 		this.direction=direction;
@@ -99,7 +102,8 @@ public class Recipe {
 	
 	/** 
 	 * Mutator for date of creation
-	 * @param date of creation
+	 * @param dateAdded
+	 * Date of creation
 	 */
 	public void setDateAdded(Date dateAdded){
 		this.dateAdded=dateAdded;
@@ -107,7 +111,8 @@ public class Recipe {
     
 	/** 
 	 * Mutator for recipe tag list field
-	 * @param a single Tag object
+	 * @param tag
+	 * A single Tag object
 	 */
 	public void addTag(Tag tag){
 		tagList.add(tag);
@@ -115,7 +120,8 @@ public class Recipe {
 	
 	/** 
 	 * Mutator for recipe category list field
-	 * @param a single Category object
+	 * @param category
+	 * A single Category object
 	 */
 	public void addCategory(Category category){
 		categoryList.add(category);
@@ -123,7 +129,8 @@ public class Recipe {
 	
 	/** 
 	 * Mutator for recipe ingredient list field
-	 * @param a single ingredient object
+	 * @param ingredient
+	 * A single ingredient object
 	 */
 	public void addIngredient(Ingredient ingredient){
 		ingredientList.add(ingredient);
@@ -131,7 +138,8 @@ public class Recipe {
 	
 	/** 
 	 * Mutator for recipe comment list field
-	 * @param a single Comment object
+	 * @param comment
+	 * A single Comment object
 	 */
 	public void addComment(Comment comment){
 		commentList.add(comment);
@@ -139,7 +147,8 @@ public class Recipe {
 	
 	/** 
 	 * Accessor for recipe id field 
-	 * @return value for recipe id
+	 * @return recipeId
+	 * Integer value for recipe id
 	 */
 	public int getRecipeId(){
 		return recipeId;
@@ -147,15 +156,17 @@ public class Recipe {
 	
 	/** 
 	 * Accessor for recipe name field 
-	 * @return value for recipe name
+	 * @return recipeName
+	 * String of recipe name
 	 */	
 	public String getRecipeName(){
 		return recipeName;
 	}
 	
 	/** 
-	 * Accessor for recipen direction field 
-	 * @return value for recipe direction
+	 * Accessor for recipe direction field 
+	 * @return direction
+	 * String of recipe direction
 	 */
 	public String getDirection(){
 		return direction;
@@ -163,7 +174,8 @@ public class Recipe {
 	
 	/** 
 	 * Accessor for date of creation field 
-	 * @return value for the date of creation
+	 * @return dateAdded
+	 * The date of creation
 	 */
 	public Date getDateAdded(){
 		return dateAdded;
@@ -171,7 +183,8 @@ public class Recipe {
 	
 	/** 
 	 * Accessor for tag list field 
-	 * @return list of tags 
+	 * @return tagList
+	 * ArrayList of tags 
 	 */
 	public ArrayList<Tag> getTagList(){
 		return tagList;
@@ -179,7 +192,8 @@ public class Recipe {
 	
 	/** 
 	 * Accessor for category list field 
-	 * @return list of category 
+	 * @return categoryList
+	 * ArrayList of category 
 	 */
 	public ArrayList<Category> getCategoryList(){
 		return categoryList;
@@ -187,7 +201,8 @@ public class Recipe {
 	
 	/** 
 	 * Accessor for ingredient list field 
-	 * @return list of ingredients 
+	 * @return ingredientList
+	 * ArrayList of ingredients 
 	 */
 	public ArrayList<Ingredient> getIngredientList(){
 		return ingredientList;
@@ -195,7 +210,8 @@ public class Recipe {
 	
 	/** 
 	 * Accessor for comment list field 
-	 * @return list of comments 
+	 * @return commentList
+	 * ArrayList of comments 
 	 */
 	public ArrayList<Comment> getCommentList(){
 		return commentList;
@@ -203,8 +219,8 @@ public class Recipe {
 	
 	/**
 	 *	Converts this class into a meaningful string.
-	 *	@return	Formats recipe id, name, direction, date of creation, tags, categories
-	 *          ingredients, and comment. 
+	 *	@return Formats integer of recipe id, string of name, string direction, date of creation, 
+	 *	tags, categories, ingredients, and comment. 
 	 */
 	@Override
 	public String toString(){

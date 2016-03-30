@@ -76,7 +76,7 @@ public class RecipeView {
 	}
 
 	/**
-	 * to create a recipe
+	 * To create a recipe
 	 */
 	public void addRecipe() {
 		Recipe recipe = new Recipe();
@@ -119,7 +119,9 @@ public class RecipeView {
 	}
 
 	/**
-	 * to create a ingredient in a recipe
+	 * To create a ingredient in a recipe
+	 * @return ingredient
+	 * A Ingredient object
 	 */
 	private Ingredient addIngredientToRecipe() {
 		Scanner input2 = new Scanner(System.in);
@@ -133,6 +135,8 @@ public class RecipeView {
 
 	/**
 	 * Allows users to choose the categories for a recipe 
+	 * @return category
+	 * A Category object
 	 */
 	private Category addCategoryToRecipe() {
 		System.out.println("Please select your recipe Catagory: ");
@@ -146,6 +150,8 @@ public class RecipeView {
 
 	/**
 	 * Allows users to choose the tags for a recipe 
+	 * @return tag
+	 * A Tag object
 	 */
 	private Tag addTagsToRecipe() {
 		int con = 0;

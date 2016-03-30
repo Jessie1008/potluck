@@ -16,7 +16,8 @@ import java.util.Date;
 public interface RecipeController  {
 	/**
 	 * add a recipe to the list of the member
-	 * @param a Recipe object
+	 * @param recipe
+	 * A Recipe object
 	 */
 	public void addRecipe(Recipe recipe);
 
@@ -37,7 +38,8 @@ public interface RecipeController  {
 
 	/**
 	 * edit a recipes
-	 * @param a Recipe object
+	 * @param recipe
+	 * A Recipe object
 	 */
 	public void editRecipe(Recipe recipe);
 	

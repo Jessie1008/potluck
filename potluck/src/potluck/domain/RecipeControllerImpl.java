@@ -27,7 +27,8 @@ public class RecipeControllerImpl implements RecipeController {
 
 	/**
 	 * add a recipe to the list of the member
-	 * @param a Recipe object
+	 * @param recipe
+	 * A Recipe object
 	 */
 	@Override
 	public void addRecipe(Recipe recipe) {
@@ -66,7 +67,8 @@ public class RecipeControllerImpl implements RecipeController {
 
 	/**
 	 * edit a recipes
-	 * @param a Recipe object
+	 * @param recipe
+	 * A Recipe object
 	 */
 	@Override
 	public void editRecipe(Recipe recipe) {
