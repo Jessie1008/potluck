@@ -203,13 +203,6 @@ public abstract class Member {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public boolean  equals(Member member)
-	{
-		if(member.getUserName().equals(this.userName)&&member.password.equals(this.password)){
-			return true;
-		}
-		return false;
-	}
 	/**
 	 * confirmMember
 	 * @return true or false

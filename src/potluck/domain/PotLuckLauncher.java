@@ -34,7 +34,6 @@ public class PotLuckLauncher {
 				launcher.showMainMenu();
 				
 			} else {
-				login=false;
 				System.out.println("your username or password is not correct, plese login again.");
 
 			}

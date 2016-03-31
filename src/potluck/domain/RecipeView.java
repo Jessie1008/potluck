@@ -94,25 +94,25 @@ public class RecipeView {
 		do {
 			Tag tag = addTagsToRecipe();
 			recipe.getTagList().add(tag);
-			System.out.println("Continue selecting recipe tag, enter 1. yes; 0. No");
+			System.out.println("Continue selecting recipe tag, enter 0. yes; 1. No");
 			con = input.nextInt();
-		} while (con != 0);
+		} while (con != 1);
 
 		// add categories to the recipe
 		do {
 			Category category = addCategoryToRecipe();
 			recipe.getCategoryList().add(category);
-			System.out.println("Continue selecting recipe category, enter 1. yes; 0. No");
+			System.out.println("Continue selecting recipe category, enter 0. yes; 1. No");
 			con = input.nextInt();
-		} while (con != 0);
+		} while (con != 1);
 		// add ingredients to the recipe.
 
 		do {
 			Ingredient ingredient = addIngredientToRecipe();
 			recipe.getIngredientList().add(ingredient);
-			System.out.println("Continue entering recipe ingredient, enter 1. yes; 0. No");
+			System.out.println("Continue entering recipe ingredient, enter 0. yes; 1. No");
 			con = input.nextInt();
-		} while (con != 0);
+		} while (con != 1);
 
 		recipeController.addRecipe(recipe);
 
